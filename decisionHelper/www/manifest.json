@@ -15,7 +15,14 @@
         "114": "assets/icons/icon114.png",
         "128": "assets/icons/icon128.png",
         "144": "assets/icons/icon144.png"
-    },    
+    },
+    "app": {
+        "background": {
+            "scripts": [
+                "background.js"
+            ]
+        }
+    },
     "permissions": [
         "<all_urls>"
     ]
