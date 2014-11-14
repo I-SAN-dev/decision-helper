@@ -1,0 +1,20 @@
+{
+    "plugin_search_path": [
+        "C:\\Users\\Sebastian\\AppData\\Roaming\\npm\\node_modules\\cca\\cordova",
+        "C:\\Users\\Sebastian\\AppData\\Roaming\\npm\\node_modules\\cca\\cordova\\cordova-plugins"
+    ],
+    "lib": {
+        "android": {
+            "uri": "C:\\Users\\Sebastian\\AppData\\Roaming\\npm\\node_modules\\cca\\cordova\\cordova-android",
+            "url": "C:\\Users\\Sebastian\\AppData\\Roaming\\npm\\node_modules\\cca\\cordova\\cordova-android"
+        },
+        "ios": {
+            "uri": "C:\\Users\\Sebastian\\AppData\\Roaming\\npm\\node_modules\\cca\\cordova\\cordova-ios",
+            "url": "C:\\Users\\Sebastian\\AppData\\Roaming\\npm\\node_modules\\cca\\cordova\\cordova-ios"
+        },
+        "www": {
+            "uri": "C:\\Users\\Sebastian\\AppData\\Roaming\\npm\\node_modules\\cca\\templates\\default-app",
+            "link": false
+        }
+    }
+}
