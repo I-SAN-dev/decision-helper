@@ -1,6 +1,6 @@
 {
     "name": "decisionHelper",
-    "description": "A Sample Chrome App",
+    "description": "A simple app, that helps you make decisions",
     "manifest_version": 2,
     "minimum_chrome_version": "23",
     "version": "0.1.1",
@@ -15,14 +15,7 @@
         "114": "assets/icons/icon114.png",
         "128": "assets/icons/icon128.png",
         "144": "assets/icons/icon144.png"
-    },
-    "app": {
-        "background": {
-            "scripts": [
-                "background.js"
-            ]
-        }
-    },
+    },    
     "permissions": [
         "<all_urls>"
     ]
