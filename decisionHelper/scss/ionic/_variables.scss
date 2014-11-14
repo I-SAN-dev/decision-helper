@@ -35,10 +35,10 @@ $headings-font-family:            $font-family-base !default;
 $headings-font-weight:            500 !default;
 $headings-line-height:            1.2 !default;
 
-$base-background-color:           #fff !default;
-$base-color:                      #000 !default;
+$base-background-color:           $dark !default;
+$base-color:                      $stable !default;
 
-$link-color:                      $positive !default;
+$link-color:                      $calm !default;
 $link-hover-color:                darken($link-color, 15%) !default;
 
 $content-padding:                 10px !default;
