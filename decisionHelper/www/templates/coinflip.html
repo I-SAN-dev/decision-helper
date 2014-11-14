@@ -5,8 +5,14 @@
   The Friends service returns an array of friend data
 -->
 <ion-view title="Coinflip">
-    <ion-content has-header="true" padding="true">
-        <h1>Coinflip</h1>
-        <a href="#/dash">Go to dash!</a>
+    <ion-content has-header="true" padding="true" ng-controller="CoinflipCtrl as flip">
+        <div class="coin-yes" ng-show="flip.should">
+            <i class="ion-thumbsup"></i>
+            <p>YES</p>
+        </div>
+        <div class="coin-no" ng-hide="flip.should">
+            <i class="ion-thumbsdown"></i>
+            <p>NO</p>
+        </div>
     </ion-content>
 </ion-view>
