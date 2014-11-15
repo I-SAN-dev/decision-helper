@@ -1,18 +1,15 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
 <ion-view title="Coinflip">
-    <ion-content has-header="true" padding="true" ng-controller="CoinflipCtrl as flip">
-        <div class="coin-yes" ng-show="flip.should">
+    <ion-content has-header="true" padding="true" ng-controller="CoinflipCtrl">
+        <div class="coin-yes" ng-show="should">
             <i class="ion-thumbsup"></i>
             <p>YES</p>
         </div>
-        <div class="coin-no" ng-hide="flip.should">
+        <div class="coin-no" ng-hide="should">
             <i class="ion-thumbsdown"></i>
             <p>NO</p>
+        </div>
+        <div class="coin-reflip" ng-hide="amount == 0">
+            test {{amount}}
         </div>
     </ion-content>
 </ion-view>
