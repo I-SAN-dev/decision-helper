@@ -10,6 +10,19 @@ $calm: #0097AB !default;
 // when Sass processes, both Ionic's Sass and your Sass will combine
 // into one file and saved in your app's directory as css/app.css
 
+// Home
+
+.startimage
+{
+  max-width: 100%;
+  height: auto;
+}
+.startimagecontainer
+{
+  padding: 1.3em 6em;
+}
+
+// Coinflip
 .coin-yes
 {
   color: #3fff59;

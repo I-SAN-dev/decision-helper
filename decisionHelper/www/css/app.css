@@ -8872,6 +8872,13 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   -webkit-transition: none !important;
   transition: none !important; }
 
+.startimage {
+  max-width: 100%;
+  height: auto; }
+
+.startimagecontainer {
+  padding: 1.3em 6em; }
+
 .coin-yes {
   color: #3fff59;
   border-color: #3fff59; }
