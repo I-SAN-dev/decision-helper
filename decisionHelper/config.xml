@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.your.company.decisionHelper" version="0.1.1">
-    <name>decisionHelper</name>
+<?xml version="1.0" encoding="UTF-8"?><widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.isan.app.decisionHelper" version="0.1.1">
+    <name>Decision Helper</name>
 
     <description>A simple app, that helps you make decisions</description>
 
-    <author>Author Name &lt;a@b.com></author>
+    <author>I-SAN.de Webdesign &amp; Hosting GbR &lt;kontakt@i-san.de&gt;></author>
 
     <preference name="KeyboardShrinksView" value="true"/>
     <preference name="StatusBarOverlaysWebView" value="false"/>

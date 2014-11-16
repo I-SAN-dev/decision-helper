@@ -1,5 +1,5 @@
 {
-    "name": "decisionHelper",
+    "name": "Decision Helper",
     "description": "A simple app, that helps you make decisions",
     "manifest_version": 2,
     "minimum_chrome_version": "23",

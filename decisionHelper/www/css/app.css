@@ -8887,7 +8887,7 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   text-align: center;
   padding: 0.5em;
   margin: 0.5em;
-  border-radius: 1em;
+  border-radius: 5em;
   border-width: 0.1em;
   border-style: solid; }
 

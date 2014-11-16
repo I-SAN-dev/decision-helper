@@ -1,5 +1,11 @@
-<ion-view title="Coinflip">
-    <ion-content has-header="true" padding="true" ng-controller="CoinflipCtrl">
+<ion-view title="Coinflip" ng-controller="CoinflipCtrl">
+    <ion-content has-header="true" padding="true" >
+
+        <ion-refresher
+                pulling-text="Pull to flip again"
+                on-refresh="reflip()">
+        </ion-refresher>
+
         <div class="coin-yes" ng-show="should">
             <i class="ion-thumbsup"></i>
             <p>YES</p>
@@ -8,8 +14,6 @@
             <i class="ion-thumbsdown"></i>
             <p>NO</p>
         </div>
-        <div class="coin-reflip" ng-hide="amount == 0">
-            test {{amount}}
-        </div>
+
     </ion-content>
 </ion-view>
