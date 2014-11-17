@@ -1,19 +1,17 @@
 <!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
+  This template loads for the 'index' state (app.js)
 -->
 <ion-view title="Decision Helper">
     <ion-content has-header="true" padding="true">
-        <div class="startimagecontainer">
+        <div class="row responsive-sm">
+        <div class="startimagecontainer col col-33">
             <img src="assets/decisionhelper.png" class="startimage">
         </div>
-
-        <a class="button button-large button-calm button-block icon-right ion-chevron-right padding-vertical" href="#/coinflip">Flip a coin!</a>
-        <a class="button button-large button-calm button-block icon-right ion-chevron-right padding-vertical" href="#/coinflip">Pro - Con</a>
-        <a class="button button-large button-calm button-block icon-right ion-chevron-right padding-vertical" href="#/coinflip">Best of</a>
-
-
+        <div class="col col-66">
+        <a class="button button-calm button-block icon-right ion-chevron-right padding-vertical" href="#/coinflip">Flip a coin!</a>
+        <a class="button button-calm button-block icon-right ion-chevron-right padding-vertical" href="#/coinflip">Pro - Con</a>
+        <a class="button button-calm button-block icon-right ion-chevron-right padding-vertical" href="#/coinflip">Best of</a>
+        </div>
+        </div>
     </ion-content>
 </ion-view>

@@ -45,3 +45,11 @@ $calm: #0097AB !default;
   border-width: 0.1em;
   border-style: solid;
 }
+
+// Phone Landscape
+@media all and (min-width:$grid-responsive-sm-break) {
+  .startimagecontainer
+  {
+    padding: 1.3em;
+  }
+}

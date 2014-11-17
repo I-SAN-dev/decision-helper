@@ -8898,4 +8898,8 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   border-width: 0.1em;
   border-style: solid; }
 
+@media all and (min-width: 567px) {
+  .startimagecontainer {
+    padding: 1.3em; } }
+
 /*# sourceMappingURL=app.css.map */
