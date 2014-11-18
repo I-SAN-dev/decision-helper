@@ -66,3 +66,46 @@ app.controller('CoinflipCtrl', function($scope, $timeout)
 
 
 });
+
+app.controller('ProconCtrl', function ($scope) {
+
+   $scope.procon = {
+       left:{
+           name:'',
+           points: 0
+       },
+       right:{
+           name:'',
+           points:0
+       },
+       setup: false
+   };
+
+    $scope.setState = function(){
+        if($scope.procon.left.name != '' && $scope.procon.right.name != ''){
+            $scope.procon.setup = true;
+        }
+        else {
+            $scope.procon.setup = false;
+        }
+    };
+
+    $scope.addProcon = function(left, pro) {
+        allert('Button clicked!');
+        if(left) {
+            if (pro) {
+                procon.left.points += 1;
+            } else {
+                procon.left.points -= 1;
+            }
+        } else {
+            if (pro) {
+                procon.right.points += 1;
+            }else {
+                procon.right.points -= 1;
+            }
+        }
+    };
+
+
+});

@@ -46,6 +46,11 @@ $calm: #0097AB !default;
   border-style: solid;
 }
 
+// Pro-Con
+.text-big {
+  font-size: 3.5em;
+}
+
 // Phone Landscape
 @media all and (min-width:$grid-responsive-sm-break) {
   .startimagecontainer

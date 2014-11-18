@@ -39,7 +39,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       {
         url: '/coinflip',
         templateUrl: 'templates/coinflip.html'
-      });
+      })
+      .state('procon',{
+          url: '/procon',
+          templateUrl: 'templates/procon.html'
+      })
+  ;
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/');

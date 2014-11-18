@@ -1,0 +1,41 @@
+<ion-view title="ProCon" ng-controller="ProconCtrl">
+<ion-content has-header="true" padding="true">
+    <div class="list">
+        <div class="item item-input">
+            <input ng-model="procon.left.name" ng-blur="setState()" type="text" placeholder="Item 1">
+            <div class="row">
+                <div class="col">
+                    <button class="button button-block button-balanced icon ion-thumbsup" ng-disabled="!procon.setup" ng-click="procon.left.points = procon.left.points + 1"></button>
+                </div>
+                <div class="col">
+                    <button class="button button-block button-assertive icon ion-thumbsdown" ng-disabled="!procon.setup" ng-click="procon.left.points = procon.left.points - 1"></button>
+                </div>
+            </div>
+        </div>
+        <div class="item text-center text-big">
+            vs
+        </div>
+        <div class="item item-input">
+            <input ng-model="procon.right.name" ng-blur="setState()" type="text" placeholder="Item 2">
+            <div class="row">
+                <div class="col">
+                    <button class="button button-block button-balanced icon ion-thumbsup" ng-disabled="!procon.setup" ng-click="procon.right.points = procon.right.points + 1"></button>
+                </div>
+                <div class="col">
+                    <button class="button button-block button-assertive icon ion-thumbsdown" ng-disabled="!procon.setup" ng-click="procon.right.points = procon.right.points - 1"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" ng-show="procon.setup">
+    <div class="row">
+        <div class="col"><strong>{{procon.left.name}}</strong></div>
+        <div class="col"><strong>{{procon.right.name}}</strong></div>
+    </div>
+    <div class="row text-big">
+        <div class="col">{{procon.left.points}}</div>
+        <div class="col">{{procon.right.points}}</div>
+    </div>
+    </div>
+</ion-content>
+</ion-view>
