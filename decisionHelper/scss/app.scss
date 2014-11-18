@@ -1,5 +1,5 @@
 // your variable changes can go here
-$dark: #333 !default;
+$dark: #333333 !default;
 $calm: #0097AB !default;
 
 @import "ionic/ionic";
@@ -49,6 +49,15 @@ $calm: #0097AB !default;
 // Pro-Con
 .text-big {
   font-size: 3.5em;
+}
+
+.button-larger.icon:before
+{
+  font-size: 80px;
+}
+.button-larger
+{
+  min-height: 100px;
 }
 
 // Phone Landscape

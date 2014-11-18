@@ -44,6 +44,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           url: '/procon',
           templateUrl: 'templates/procon.html'
       })
+      .state('multicon', {
+          url: '/multicon',
+          templateUrl: 'templates/multicon.html'
+      })
   ;
 
   // if none of the above states are matched, use this as the fallback

@@ -1,0 +1,101 @@
+<ion-view title="Pro-Con" ng-controller="MulticonCtrl">
+
+
+        <ion-side-menus>
+            <ion-side-menu-content >
+                <ion-content has-header="true" padding="true">
+
+
+                    <div class="row">
+                        <div class="col button button-balanced" ng-click="toggleLeftSideMenu()">
+                            PRO
+                        </div>
+                        <div class="col button button-assertive" ng-click="toggleRightSideMenu()">
+                            CON
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="card">
+                                <div class="item item-text-wrap">
+                                    Agument title very nice
+                                </div>
+                                <div class="item item-divider balanced">
+                                    <i class="icon ion-ios7-star"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                            <div class="card">
+                                <div class="item item-text-wrap">
+                                    Agument title very nice
+                                </div>
+                                <div class="item item-divider assertive">
+                                    <i class="icon ion-ios7-star"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col">
+                            <button class="button button-large button-balanced button-clear button-full icon-left ion-chevron-right"
+                                    ng-click="toggleLeftSideMenu()"></button>
+                        </div>
+                        <div class="col">
+                            <button class="button button-large button-assertive button-clear button-full icon-right ion-chevron-left"
+                                    ng-click="toggleRightSideMenu()"></button>
+                        </div>
+                    </div>
+
+
+                </ion-content>
+            </ion-side-menu-content>
+            <ion-side-menu side="left">
+                <ion-content has-header="true" padding="true">
+
+                    <div class="list list-balanced">
+                        <label class="item item-input item-floating-label">
+                            <span class="input-label">Add Pro</span>
+                            <input type="text" placeholder="Add Pro" name="pro-arg">
+                        </label>
+                        <div class="item range range-positive">
+                            <i class="icon ion-ios7-star-outline"></i>
+                            <input type="range" name="pro-arg-rating" min="1" max="5" value="3">
+                            <i class="icon ion-ios7-star"></i>
+                        </div>
+                    </div>
+                    <button class="button-larger button button-large button-balanced button-clear button-full icon ion-ios7-plus-outline"></button>
+
+
+                </ion-content>
+            </ion-side-menu>
+            <ion-side-menu side="right">
+                <ion-content has-header="true" padding="true">
+
+                    <div class="list">
+                        <label class="item item-input item-floating-label">
+                            <span class="input-label">Add Con</span>
+                            <input type="text" placeholder="Add Con" name="con-arg">
+                        </label>
+                        <div class="item range range-positive">
+                            <i class="icon ion-ios7-star-outline"></i>
+                            <input type="range" name="con-arg-rating" min="1" max="5" value="3">
+                            <i class="icon ion-ios7-star"></i>
+                        </div>
+                    </div>
+                    <button class="button-larger button button-large button-assertive button-clear button-full icon ion-ios7-plus-outline"></button>
+
+                </ion-content>
+            <ion-side-menu>
+        </ion-side-menus>
+
+
+</ion-view>

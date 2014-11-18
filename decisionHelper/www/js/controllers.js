@@ -67,6 +67,7 @@ app.controller('CoinflipCtrl', function($scope, $timeout)
 
 });
 
+
 app.controller('ProconCtrl', function ($scope) {
 
    $scope.procon = {
@@ -107,5 +108,19 @@ app.controller('ProconCtrl', function ($scope) {
         }
     };
 
+
+});
+
+/*
+ * The multicon controller
+ */
+app.controller('MulticonCtrl', function($scope, $ionicSideMenuDelegate){
+
+    $scope.toggleLeftSideMenu = function() {
+        $ionicSideMenuDelegate.toggleLeft();
+    };
+    $scope.toggleRightSideMenu = function() {
+        $ionicSideMenuDelegate.toggleRight();
+    };
 
 });
