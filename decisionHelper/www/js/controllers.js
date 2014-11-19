@@ -135,29 +135,67 @@ app.controller('MulticonCtrl', function($ionicSideMenuDelegate){
     };
     this.proList = [];
     this.conList = [];
+    this.proConRating = 0.5;
+    this.proTotal = 0;
+    this.conTotal = 0;
 
     this.calcResult = function()
     {
+        var that = this;
+        this.proTotal = 0;
+        this.proList.forEach(function (element) {
+            that.proTotal += parseInt(element.rating);
+        });
+
+        this.conTotal = 0;
+        this.conList.forEach(function (element) {
+            that.conTotal += parseInt(element.rating);
+        });
+
+        if((this.conTotal == 0) && (this.proTotal == 0))
+        {
+            return 0.5;
+        }
+        if((this.conTotal == 0) && (this.proTotal != 0))
+        {
+            return 0;
+        }
+        if((this.conTotal != 0) && (this.proTotal == 0))
+        {
+            return 1;
+        }
+
+        var gesamt = parseInt(this.proTotal) + parseInt(this.conTotal);
+        return this.conTotal / gesamt;
 
     };
     this.sortArgs = function()
     {
-
+        var ratingsort = function(a, b)
+        {
+            return b.rating - a.rating
+        };
+        this.proList.sort(ratingsort);
+        this.conList.sort(ratingsort);
     };
 
     this.addPro = function()
     {
         this.proList.push(this.newPro);
-        this.newPro = {};
-        this.calcResult();
+        this.newPro = {
+            rating: 3
+        };
+        this.proConRating = this.calcResult();
         this.sortArgs();
     };
 
     this.addCon = function()
     {
         this.conList.push(this.newCon);
-        this.newCon = {};
-        this.calcResult();
+        this.newCon = {
+            rating: 3
+        };
+        this.proConRating = this.calcResult();
         this.sortArgs();
     };
 

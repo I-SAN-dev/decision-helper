@@ -31,6 +31,8 @@
                         </div>
                     </div>
 
+                    {{c.proConRating}}
+
                     <div class="row">
                         <div class="col">
                             <button class="button button-large button-balanced button-clear button-full icon-left ion-chevron-right"
@@ -44,6 +46,26 @@
 
 
                 </ion-content>
+
+                <div class="rating-container">
+                    <div class="left-green">
+
+                    </div>
+                    <div class="right-red">
+
+                    </div>
+                    <div class="needle" style="transform: rotate({{c.proConRating * 180}}deg);">
+                        <div class="row">
+                            <div class="col needle-inner">
+
+                            </div>
+                            <div class="col">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </ion-side-menu-content>
             <ion-side-menu side="left">
                 <ion-content has-header="true" padding="true">

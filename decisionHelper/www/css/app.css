@@ -8907,6 +8907,28 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
 .button-larger {
   min-height: 100px; }
 
+.rating-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 200px;
+  height: 100px;
+  margin-left: -100px;
+  background-color: #ef4e3a;
+  border-radius: 100px 100px 0 0; }
+
+.rating-container .needle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -80px;
+  height: 20px;
+  width: 160px;
+  transition: 7.5s transform; }
+
+.rating-container .needle .needle-inner {
+  background-color: #0097AB; }
+
 @media all and (min-width: 567px) {
   .startimagecontainer {
     padding: 1.3em; } }
