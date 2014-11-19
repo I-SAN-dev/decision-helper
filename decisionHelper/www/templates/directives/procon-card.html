@@ -1,0 +1,8 @@
+<div class="card fade-in">
+    <div class="item item-text-wrap">
+        {{arg.title}}
+    </div>
+    <div class="item item-divider {{color}}">
+        <i class="icon ion-ios7-star" ng-repeat="i in argument.getWholeStars(arg.rating) track by $index"></i><i class="icon ion-ios7-star-outline" ng-repeat="i in argument.getEmptyStars(arg.rating) track by $index"></i>
+    </div>
+</div>

@@ -114,13 +114,52 @@ app.controller('ProconCtrl', function ($scope) {
 /*
  * The multicon controller
  */
-app.controller('MulticonCtrl', function($scope, $ionicSideMenuDelegate){
+app.controller('MulticonCtrl', function($ionicSideMenuDelegate){
 
-    $scope.toggleLeftSideMenu = function() {
+    this.toggleLeftSideMenu = function() {
         $ionicSideMenuDelegate.toggleLeft();
     };
-    $scope.toggleRightSideMenu = function() {
+    this.toggleRightSideMenu = function() {
         $ionicSideMenuDelegate.toggleRight();
     };
+
+    this.newPro =
+    {
+        title: '',
+        rating: 3
+    };
+    this.newCon =
+    {
+        title: '',
+        rating: 3
+    };
+    this.proList = [];
+    this.conList = [];
+
+    this.calcResult = function()
+    {
+
+    };
+    this.sortArgs = function()
+    {
+
+    };
+
+    this.addPro = function()
+    {
+        this.proList.push(this.newPro);
+        this.newPro = {};
+        this.calcResult();
+        this.sortArgs();
+    };
+
+    this.addCon = function()
+    {
+        this.conList.push(this.newCon);
+        this.newCon = {};
+        this.calcResult();
+        this.sortArgs();
+    };
+
 
 });
